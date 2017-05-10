@@ -1,4 +1,47 @@
-$mainColor: #333;
-$fontFamily: Helvetica, Arial, sans-serif;
-$linkColor: #699;
-$bgColor: #f8f8f8;
+@font-face {
+	font-family: 'glober';
+	src: url('../fonts/glober-light.woff2') format('woff2'),
+		 url('../fonts/glober-light.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+$os: 'Open Sans', sans-serif;
+$glober: 'glober', sans-serif;
+
+
+.container {
+	max-width: 1160px;
+	padding: 0 10px;
+	margin: auto;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.btn {
+	width: 140px;
+	height: 40px;
+	background-color: #1c8247;
+	border: 1px solid #1c8247;
+	border-radius: 20px;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.7), inset 0 2px 0 rgba(255, 255, 255, 0.15);
+	text-align: center;
+	display: block;
+	margin: auto;
+	text-transform: uppercase;
+	text-decoration: none;
+	font: 300 13px/38px $os;
+	color: #fff;
+	letter-spacing: 0.15em;
+	transition: all .3s ease-in-out;
+	cursor: pointer;
+	&:hover {
+		background: #166939;
+	}
+}

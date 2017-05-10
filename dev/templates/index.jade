@@ -1,16 +1,131 @@
 extends _layout
 block content
 	main.main-content
-		.sprite-example
-			h2.heading Sprite example
-			i.facebook-logo__icon
-			i.google-plus-logo__icon
-			i.instagram-logo__icon
-			i.twitter-logo__icon
-			i.youtube-logo__icon
-		.author-git
-			h2 Github link
-			a(href="https://github.com/narek-t/gulp-jade-sass" target="_blank") https://github.com/narek-t/gulp-jade-sass
+		.page__top(style="background-image: url(img/index-bg.jpg)")
+			.container
+				.page__top__inner
+					h1.page__top-title Официальный дистрибьютор IT оборудования
+					p.page__top-subtitle Компания Навика Дата является официальным дистрибьютором ведущих мировых вендоров.
+					a.btn.btn--green(href="#") Подробнее
+		.home-brands.simple-section
+			.container
+				h2.simple-title Наши бренды
+				.home-brands__list
+					.home-brands__item
+						img(src="img/br1.png", alt="")
+					.home-brands__item
+						img(src="img/br2.png", alt="")
+					.home-brands__item
+						img(src="img/br3.png", alt="")
+					.home-brands__item
+						img(src="img/br4.png", alt="")
+					.home-brands__item
+						img(src="img/br5.png", alt="")
+					.home-brands__item
+						img(src="img/br6.png", alt="")
+					.home-brands__item
+						img(src="img/br7.png", alt="")
+					.home-brands__item
+						img(src="img/br8.png", alt="")
+					.home-brands__item
+						img(src="img/br9.png", alt="")
+					.home-brands__item
+						img(src="img/br10.png", alt="")
+		.home-complex.simple-section
+			.container
+				h2.simple-title.simple-title--white Комплексные решения
+				p.simple-subheading Помимо IT оборудования, мы также предлагаем полный спектр сопутствующих услуг:
+				.home-complex__list
+					.home-complex__item
+						a.full-link(href="#")
+						.home-complex__item-ico
+							img(src="img/c1.png", alt="")
+						span.home-complex__item-text Логистические и транспортные услуги
+					.home-complex__item
+						a.full-link(href="#")
+						.home-complex__item-ico
+							img(src="img/c2.png", alt="")
+						span.home-complex__item-text IT аутсорсинг
+					.home-complex__item
+						a.full-link(href="#")
+						.home-complex__item-ico
+							img(src="img/c3.png", alt="")
+						span.home-complex__item-text IT консалтинг
+					.home-complex__item
+						a.full-link(href="#")
+						.home-complex__item-ico
+							img(src="img/c4.png", alt="")
+						span.home-complex__item-text Организация услуг защищенной связи и передачи данных
+					.home-complex__item
+						a.full-link(href="#")
+						.home-complex__item-ico
+							img(src="img/c5.png", alt="")
+						span.home-complex__item-text Предоставление облачных сервисов
+		.home-blog.simple-section
+			.container
+				h2.simple-title Блог
+				.home-blog__slider
+					.home-blog__slider-col
+						.home-blog__slider-item.blog__item
+							a.full-link(href="#")
+							.blog__item-img(style="background-image: url(img/home-b1.jpg)")
+							.blog__item-content
+								h3.blog__item-title Постоянный рост и сфера нашей активности нашей активности
+								p.blog__item-description Значимость этих проблем настолько очевидна, что укрепление и развитие структуры требуют определения и уточнения существенных финансов
+								.blog__item-date--wrapper.cf
+									span.blog__item-date 17.03.2017
+									span.blog__item-more
+						.home-blog__slider-item.blog__item
+							a.full-link(href="#")
+							.blog__item-img(style="background-image: url(img/home-b2.jpg)")
+							.blog__item-content
+								h3.blog__item-title Постоянный рост и сфера нашей активности
+								p.blog__item-description Значимость этих проблем настолько очевидна, что укрепление и развитие структуры требуют определения и уточнения существенных финансов
+								.blog__item-date--wrapper.cf
+									span.blog__item-date 17.03.2017
+									span.blog__item-more
+					.home-blog__slider-col
+						.home-blog__slider-item.cf.blog__item
+							a.full-link(href="#")
+							.blog__item-img(style="background-image: url(img/home-b1.jpg)")
+							.blog__item-content
+								h3.blog__item-title Постоянный рост и сфера нашей активности
+								p.blog__item-description Значимость этих проблем настолько очевидна, что укрепление и развитие структуры требуют определения и уточнения существенных финансов
+								.blog__item-date--wrapper.cf
+									span.blog__item-date 17.03.2017
+									span.blog__item-more
+						.home-blog__slider-item.cf.blog__item
+							a.full-link(href="#")
+							.blog__item-img(style="background-image: url(img/home-b1.jpg)")
+							.blog__item-content
+								h3.blog__item-title Постоянный рост и сфера нашей активности
+								p.blog__item-description Значимость этих проблем настолько очевидна, что укрепление и развитие структуры требуют определения и уточнения существенных финансов
+								.blog__item-date--wrapper.cf
+									span.blog__item-date 17.03.2017
+									span.blog__item-more
+					.home-blog__slider-col
+						.home-blog__slider-item.blog__item
+							a.full-link(href="#")
+							.blog__item-img(style="background-image: url(img/home-b1.jpg)")
+							.blog__item-content
+								h3.blog__item-title Постоянный рост и сфера нашей активности нашей активности
+								p.blog__item-description Значимость этих проблем настолько очевидна, что укрепление и развитие структуры требуют определения и уточнения существенных финансов
+								.blog__item-date--wrapper.cf
+									span.blog__item-date 17.03.2017
+									span.blog__item-more
+						.home-blog__slider-item.blog__item
+							a.full-link(href="#")
+							.blog__item-img(style="background-image: url(img/home-b2.jpg)")
+							.blog__item-content
+								h3.blog__item-title Постоянный рост и сфера нашей активности
+								p.blog__item-description Значимость этих проблем настолько очевидна, что укрепление и развитие структуры требуют определения и уточнения существенных финансов
+								.blog__item-date--wrapper.cf
+									span.blog__item-date 17.03.2017
+									span.blog__item-more
+
+
+
+
 
 
 

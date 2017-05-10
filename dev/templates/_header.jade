@@ -1,4 +1,37 @@
 block header
 
 	header.site-header
-		h1 Blank template for frontend developers
+		.container.cf
+			a.site-header__logo.alignleft(href="#")
+				img(src="img/logo.png", alt="")
+			.site-header__menu.alignright
+				ul.site-header__nav
+					li.menu-item-has-children
+						a(href="#") бренды
+						ul.sub-menu
+							li
+								a(href="#") Sub item 1
+							li
+								a(href="#") Sub item 2
+							li
+								a(href="#") Sub item 3
+							li
+								a(href="#") Sub very long item looong 4
+					li.menu-item-has-children
+						a(href="#") Услуги
+						ul.sub-menu
+							li
+								a(href="#") Sub item 1
+							li
+								a(href="#") Sub item 2
+							li
+								a(href="#") Sub item 3
+							li
+								a(href="#") Sub very long item looong 4
+					li
+						a(href="#") О компании
+					li
+						a(href="#") Блог
+					li
+						a(href="#") контакты
+				a.site-header__tel(href="tel:+74951503993") +7 (495) 150-39-93
