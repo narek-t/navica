@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;amp;subset=cyrillic"/>
+    <link rel="stylesheet" href="css/style.min.css"/>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="all-wrapper">
+      <header class="site-header">
+        <div class="container cf"><a href="#" class="site-header__logo alignleft"><img src="img/logo.png" alt=""/></a>
+          <div class="site-header__menu alignright">
+            <ul class="site-header__nav">
+              <li class="menu-item-has-children"><a href="#">бренды</a>
+                <ul class="sub-menu">
+                  <li><a href="#">Sub item 1</a></li>
+                  <li><a href="#">Sub item 2</a></li>
+                  <li><a href="#">Sub item 3</a></li>
+                  <li><a href="#">Sub very long item looong 4</a></li>
+                </ul>
+              </li>
+              <li class="menu-item-has-children"><a href="#">Услуги</a>
+                <ul class="sub-menu">
+                  <li><a href="#">Sub item 1</a></li>
+                  <li><a href="#">Sub item 2</a></li>
+                  <li><a href="#">Sub item 3</a></li>
+                  <li><a href="#">Sub very long item looong 4</a></li>
+                </ul>
+              </li>
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Блог</a></li>
+              <li><a href="#">контакты</a></li>
+            </ul><a href="tel:+74951503993" class="site-header__tel">+7 (495) 150-39-93</a>
+          </div>
+        </div>
+      </header>
+      <main class="main-content">
+        <div class="container">
+          <h1 class="contacts__title">Контакты</h1>
+          <div class="map-wrapper">
+            <div id="map"></div>
+          </div>
+          <div class="contacts__list">
+            <div style="background-image: url(img/cpage1.png)" class="contacts__list-item">
+              <p class="contacts__list-title">Телефон | Факс</p><a href="tel:+74951503993" class="contacts__list-description">+7 (495) 150-39-93</a>
+            </div>
+            <div style="background-image: url(img/cpage2.png)" class="contacts__list-item">
+              <p class="contacts__list-title">E-mail</p><a href="mailto:info@navicadata.ru" class="contacts__list-description">info@navicadata.ru</a>
+            </div>
+            <div style="background-image: url(img/cpage3.png)" class="contacts__list-item">
+              <p class="contacts__list-title">Адрес</p><span class="contacts__list-description">г. Москва, 109028, ул. Земляной Вал,  50А/8 с2</span>
+            </div>
+          </div>
+          <form class="contacts-page__form">
+            <div class="contacts__form">
+              <div class="contacts__form-col">
+                <input type="text" placeholder="Имя" class="contacts__form-input"/>
+                <input type="tel" placeholder="Телефон" class="contacts__form-input"/>
+                <input type="email" placeholder="Email" class="contacts__form-input"/>
+              </div>
+              <div class="contacts__form-col">
+                <textarea placeholder="Сообщение" class="contacts__form-input"></textarea>
+              </div>
+            </div>
+            <input type="submit" value="Отправить" class="btn"/>
+          </form>
+        </div>
+      </main>
+    </div>
+    <footer class="site-footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-top__inner"><a href="#" class="footer-logo"><img src="img/footer-logo.png" alt=""/></a>
+            <p class="footer-loc footer-text">г. Москва, 109004, ул. Земляной Вал, 50А/8 с2</p><a href="tel:+74951503993" class="footer-tel footer-text">+7 (495) 150-39-93</a><a href="mailto:info@navicadata.ru" class="footer-email footer-text">info@navicadata.ru</a>
+            <div class="footer-social"><a href="#" style="background-image: url(img/footer-vk.png)"></a><a href="#" style="background-image: url(img/footer-fb.png)"></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container cf">
+          <p class="copyright alignleft">© 2017 Navicadata. Все права защищены.</p>
+          <p class="madein alignright">Разработка сайта: <a href="http://belugalab.ru" target="_blank">Beluga Labs</a></p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArmtIZw2SGzNnEOhd5D5OHV7XJOK8UI98"></script>
+    <script src="js/lib/lib.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script>
+      var styles = [
+      	{
+      	"featureType": "water",
+      	"elementType": "geometry",
+      	"stylers": [
+      	{
+      	"color": "#e9e9e9"
+      	},
+      	{
+      	"lightness": 17
+      	}
+      	]
+      	},
+      	{
+      	"featureType": "landscape",
+      	"elementType": "geometry",
+      	"stylers": [
+      	{
+      	"color": "#f5f5f5"
+      	},
+      	{
+      	"lightness": 20
+      	}
+      	]
+      	},
+      	{
+      	"featureType": "road.highway",
+      	"elementType": "geometry.fill",
+      	"stylers": [
+      	{
+      	"color": "#ffffff"
+      	},
+      	{
+      	"lightness": 17
+      	}
+      	]
+      	},
+      	{
+      	"featureType": "road.highway",
+      	"elementType": "geometry.stroke",
+      	"stylers": [
+      	{
+      	"color": "#ffffff"
+      	},
+      	{
+      	"lightness": 29
+      	},
+      	{
+      	"weight": 0.2
+      	}
+      	]
+      	},
+      	{
+      	"featureType": "road.arterial",
+      	"elementType": "geometry",
+      	"stylers": [
+      	{
+      	"color": "#ffffff"
+      	},
+      	{
+      	"lightness": 18
+      	}
+      	]
+      	},
+      	{
+      	"featureType": "road.local",
+      	"elementType": "geometry",
+      	"stylers": [
+      	{
+      	"color": "#ffffff"
+      	},
+      	{
+      	"lightness": 16
+      	}
+      	]
+      	},
+      	{
+      	"featureType": "poi",
+      	"elementType": "geometry",
+      	"stylers": [
+      	{
+      	"color": "#f5f5f5"
+      	},
+      	{
+      	"lightness": 21
+      	}
+      	]
+      	},
+      	{
+      	"featureType": "poi.park",
+      	"elementType": "geometry",
+      	"stylers": [
+      	{
+      	"color": "#dedede"
+      	},
+      	{
+      	"lightness": 21
+      	}
+      	]
+      	},
+      	{
+      	"elementType": "labels.text.stroke",
+      	"stylers": [
+      	{
+      	"visibility": "on"
+      	},
+      	{
+      	"color": "#ffffff"
+      	},
+      	{
+      	"lightness": 16
+      	}
+      	]
+      	},
+      	{
+      	"elementType": "labels.text.fill",
+      	"stylers": [
+      	{
+      	"saturation": 36
+      	},
+      	{
+      	"color": "#333333"
+      	},
+      	{
+      	"lightness": 40
+      	}
+      	]
+      	},
+      	{
+      	"elementType": "labels.icon",
+      	"stylers": [
+      	{
+      	"visibility": "off"
+      	}
+      	]
+      	},
+      	{
+      	"featureType": "transit",
+      	"elementType": "geometry",
+      	"stylers": [
+      	{
+      	"color": "#f2f2f2"
+      	},
+      	{
+      	"lightness": 19
+      	}
+      	]
+      	},
+      	{
+      	"featureType": "administrative",
+      	"elementType": "geometry.fill",
+      	"stylers": [
+      	{
+      	"color": "#fefefe"
+      	},
+      	{
+      	"lightness": 20
+      	}
+      	]
+      	},
+      	{
+      	"featureType": "administrative",
+      	"elementType": "geometry.stroke",
+      	"stylers": [
+      	{
+      	"color": "#fefefe"
+      	},
+      	{
+      	"lightness": 17
+      	},
+      	{
+      	"weight": 1.2
+      	}
+      	]
+      	}
+      ]
+      function initMap() {
+      	var uluru = {lat: 55.750904, lng: 37.654758};
+      	var map = new google.maps.Map(document.getElementById('map'), {
+      		zoom: 14,
+      		center: uluru,
+      		styles: styles,
+      	});
+      	var marker = new google.maps.Marker({
+      		position: uluru,
+      		map: map,
+      		icon: 'img/marker.png'
+      	});
+      }
+      initMap()
+    </script>
+  </body>
+</html>
