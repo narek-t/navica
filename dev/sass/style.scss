@@ -696,6 +696,9 @@ strong {
 		height: auto;
 		margin: 30px auto;
 	}
+	.brand-logo {
+		margin: 0;
+	}
 }
 
 .brands__page-list {
@@ -720,6 +723,78 @@ strong {
 		margin: 0;
 	}
 }
+
+.two-col {
+	column-count: 2;
+	li {
+		padding-right: 10px;
+	}
+}
+
+.gray-block {
+	background: #fafafa;
+	padding: 25px 40px;
+	&.with-ico {
+		padding-right: 280px;
+		background-repeat: no-repeat;
+		background-position: right 20px center;
+	}
+}
+
+.complete-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	li {
+		margin-bottom: 10px;
+		padding-left: 20px;
+		background: url(../img/complete-ico.png) left top 3px no-repeat;
+	}
+}
+
+.brands-menu {
+	li {
+		position: relative;
+		a:hover {
+			color: #328f40;
+			text-shadow: 0px 0px 0px #328f40;
+		}
+	}
+	.menu-item-has-children {
+		&::before {
+			content: '\203A';
+			position: absolute;
+			left: -10px;
+			top: -1px;
+		}
+		&:hover::before {
+			color: #328f40;
+		}
+		.sub-menu {
+			padding-left: 15px;
+			margin: 0;
+			list-style-type: none;
+			padding: 10px 0 0 15px;
+			display: none;
+			li {
+				margin-bottom: 5px;
+			}
+		}
+		&.active {
+			&::before {
+				transform: rotate(90deg);
+				color: #328f40;
+			}
+			& > a {
+				color: #328f40;
+			}
+			.sub-menu {
+				display: block;
+			}
+		}
+	}
+}
+
 
 
 

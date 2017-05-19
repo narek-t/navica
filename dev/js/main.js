@@ -9,4 +9,8 @@ $(document).ready(function() {
 		event.preventDefault();
 		$(this).parents('li').toggleClass('opened');
 	});
+	$('.brands-menu .menu-item-has-children a').click(function(event) {
+		event.preventDefault();
+		$(this).parents('li').toggleClass('active');
+	});
 });
